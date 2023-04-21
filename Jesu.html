@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  
+    <title>Rotulos Jesus</title>
+<link rel="stylesheet" href="bootstrap.css">
+<script src="bootstrap.bundle.js"></script>
+<script src="bootstrap.js"></script>
+
+</head>
+<style>
+/*Muñeco*/
+#img_mma{
+position: absolute;
+top: 120%;
+left: 50%;
+width: 30%;
+height: 60%;
+}
+/*principal*/
+#img_mmm{
+position: absolute;
+top: 0%;
+left: 0%;
+width: 135%;
+height: 100%;
+}
+/*Imagen Negra*/
+#img_mmv{
+position: absolute;
+top: 230%;
+left: 25%;
+width: 50%;
+height: 50%;
+}
+/*Triangulo*/
+#img_mms{ 
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    width: 75%;
+    z-index: -1;
+    
+}
+/*Lineas*/
+#img_afgt{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+ /* Imagen que rota */
+		#imagen_op {
+ 
+  width: 15%;
+  height: 20%;
+  border: none;
+  position: absolute; /* Establece la posición fija de la imagen */
+  top: 17%; /* Ajusta la posición verticalmente */
+  left: 12%; /* Ajusta la posición horizontalmente */
+  transform: translate(-50%, -50%) rotateY(0deg); /* Ajusta la posición central y la rotación de la imagen */
+  z-index: 2; /* Establece la posición en primer plano */
+}
+
+.imagen:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px #af0404;
+  -webkit-box-shadow: 0px 0px 10px 10px #f80101;
+}
+#img_lolo{
+position: absolute;
+top: 290%;
+
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80.898mm, 1fr));
+  grid-gap: 13.882mm 17.315mm;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 26.416mm;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@font-face {
+    font-family: 'Adventure Subtitles';
+    src: url('/Adventure tles.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+b {
+  font-family: Arial, sans-serif !important; /* Usamos !important para anular cualquier estilo predeterminado */
+  font-weight: normal; /* Anulamos el estilo predeterminado de negrita */
+}
+#div_fff {
+  position: absolute;
+  top: 300%;
+}
+</style>
+</style>
+
+<body>
+    <h1></h1>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+      
+
+          <a href="servicioseficases.html">
+            <img id="imagen_op" src="Lactod.png" alt="Descripción de la imagen" class="imagen" title="Lactod.png">
+          </a>
+    <img id="img_mmm" src="Baner.jpg" alt="">
+    <img id="img_mma" src="Baner2.jpg" alt="">
+    <img id="img_mmv" src="continuidad.jpg" alt="">
+    <img id="img_mms" src="Triangulo.png" alt="">
+       <!-- horario  -->
+       <h1 style=" position: absolute; top: 120%; left: 12%; font-size: 50px; font-family: Adventure Subtitles">Horario:</h1>
+       <br/>
+       <b style="position: absolute; top: 128%; left: 8%; font-weight: 100; font-size: 40px; font-family: Adventure Subtitles">Lunes a viernes</b>
+       <br/>
+       <b style="position: absolute; top: 135%; left: 6%; font-weight: 100;  font-size: 40px; font-family: Adventure Subtitles">5:00 pm A 8:00pm</b>
+       <br/>
+       <b style="position: absolute; top: 144%; left: 13%; font-weight: 100;  font-size: 40px; font-family: Adventure Subtitles" >Sabado:</b>
+       <br/>
+     <b style="position: absolute; top: 150%; left: 6%; font-weight: 100;  font-size: 40px; font-family: Adventure Subtitles">8:00 am A 4:00pm</b>
+     <b style="position: absolute; top: 158%; left: 5%; font-weight: 100;  font-size: 20px; background-color: rgba(220, 20, 60, 0); color: crimson; font-family: Adventure Subtitles">Para mas informacion comunicarse a:</b>
+     <p><b style="position: absolute; top: 162%; left: 9%; font-weight: 100;  font-size: 40px; font-family: Adventure Subtitles">+53 58526506</b></p>
+      <!-- Texto Galeria  -->
+    <b style="position: absolute; top: 293%; left: 18%; font-weight: 100;  font-size: 60px; font-family: Adventure Subtitles">Galeria de trabajos Realizados</b>
+     <!-- Footer  -->
+     <img style="position: absolute; top: 800%; left: 0%;" src="Footer Jesu.jpg" alt="">
+     <!-- lineas  -->
+     <img id="img_afgt" src="lineas.png" alt="">
+    
+     <!-- Galeria  -->
+    <div id="div_fff" class="galeria" id="img_lolo">
+      <img src="Moto1 (1).jpg" alt="Imagen 1">
+      <img src="Moto1 (2).jpg" alt="Imagen 2">
+      <img src="Moto1 (3).jpg" alt="Imagen 3">
+      <img src="Aro1 (1).jpg" alt="Imagen 4">
+      <img src="Aro1 (2).jpg" alt="Imagen 5">
+      <img src="Aro1 (3).jpg" alt="Imagen 6">
+      <img src="gal1 (1).jpg" alt="Imagen 7">
+      <img src="gal1 (2).jpg" alt="Imagen 8">
+      <img src="gal1 (3).jpg" alt="Imagen 9">
+      <img src="gal1 (4).jpg" alt="Imagen 10">
+      <img src="gal1 (5).jpg" alt="Imagen 11">
+      <img src="gal1 (6).jpg" alt="Imagen 12">
+      <img src="gal1 (7).jpg" alt="Imagen 13">
+      
+      <img src="gal1 (9).jpg" alt="Imagen 15">
+      <img src="gal1 (10).jpg" alt="Imagen 16">
+      <img src="gal1 (11).jpg" alt="Imagen 17">
+      <img src="gal1 (12).jpg" alt="Imagen 18">
+      <img src="gal1 (13).jpg" alt="Imagen 19">
+      <img src="gal1 (14).jpg" alt="Imagen 20">
+      
+      <!-- Agrega más imágenes aquí -->
+      <div>
+       
+      </div>
+    </div>
+   
+</body>
+</html>

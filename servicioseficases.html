@@ -1,0 +1,357 @@
+<!DOCTYPE html> 
+<html lang="es">
+   <head> <meta charset="UTF-8">
+     <title>Servicios Online</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+ <!-- Enlace a la librería Bootstrap --> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"> 
+ <link rel="stylesheet" href="Entorno.css">
+   <script src="bootstrap.min.js"> </script>
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <style> 
+/* Estilos para la barra de navegación */
+ .navbar { position: fixed; top: 250px; left: 0; width: 100%; height: 50px;
+ }
+      /* Estilos para la barra de navegación */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        
+        display: flex;
+        border-radius: 10px; /* ajusta el valor para cambiar el radio */
+        
+      }
+      
+      /* Estilos para los botones */
+      .navbutton {
+        flex-grow: 1;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 10px;
+      }
+
+      /* Estilos para las imágenes de los botones */
+      .navbutton img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+      /* Estilos al pasar el cursor por encima de los botones */
+      .navbutton:hover img {
+        filter: brightness(70%);
+      }
+      
+      /* Estilos al seleccionar un botón */
+      .navbutton.selected img {
+        filter: brightness(100%);
+      }
+
+
+      /* Ajustar las distancias del menu */
+      .welcome-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* ajusta el valor para cambiar la altura del banner */
+  z-index: 1;
+}
+.welcome-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar {
+  position: absolute;
+  top: 200px; /* ajusta el valor para cambiar la distancia entre el banner y el menú */
+  left: 0;
+  width: 100%;
+  height: 50px;
+  
+  display: flex;
+  border-radius: 10px; /* ajusta el valor para cambiar el radio */
+  z-index: 2;
+}
+/* Ajusta tamaño de los botones */
+.navcontainer {
+display: flex;
+justify-content: space-between;
+}
+
+.navbutton {
+width: 150px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+border: none;
+border-radius: 5px;
+transition: all 0.3s ease;
+margin: 0.3px; /* ajusta el valor para cambiar la separación entre los botones */
+}
+
+.navbutton:hover {
+cursor: pointer;
+}
+
+.navbutton img {
+  
+width: 150px;
+height: 150px;
+margin-right: 10px;
+}
+
+/*nuevo ventana */
+#popup-container {
+        position: absolute;
+        top: 240px;
+        left: 48.99%;
+        transform: translate(-50%, -50%);
+        width: 835px;
+        height: 420px;
+        background-color: white;
+        border: 10px solid rgb(207, 154, 154);
+        z-index: 9999;
+        display: none;
+      }
+      
+      #popup-iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      /* Ajuste del Boton de Contacto */
+      #div_Cont {
+        width: 150px;
+        height:65px;
+      }
+      /*Estilo de la Imagen de Baner*/
+
+      .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}
+ #div-over {
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: -1;
+        background-image: url('Biembenido~1.jpg');
+  background-size: cover;
+  background-position: center;
+ }
+
+
+.imagen:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px #6b6a6a;
+  -webkit-box-shadow: 0px 0px 10px 10px #020008dc;
+}
+#p._56{
+position: absolute;
+left: 40px;
+}
+#texto {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+/*Footer final*/
+#img_opf{
+position: absolute;
+top: 150;
+left: 0px;
+width: 1300px;
+height: 180%;
+}
+/*Direciones*/
+#a_koko{
+position: absolute;
+top: 258%;
+left: 12%;
+z-index: 2;
+}
+#a_kol{
+position: absolute;
+top: 265%;
+left: 12%;
+z-index: 2;
+}
+#a_kol0{
+position: absolute;
+top: 272%;
+left: 12%;
+z-index: 2;
+}
+#a_kol0pp{
+position: absolute;
+top: 280%;
+left: 12%;
+z-index: 2;
+}
+    </style>
+  </head>
+  <body>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <b>
+      <div class="col-12 col-sm-6" style="width: 50%; margin: 0 auto;"> <p style= "width: 600px; margin-left: 30px; margin-right: 30px; background:  rgba(250, 248, 248, 0.096); color: rgb(201, 15, 15);">
+      ¡Bienvenido a nuestra página web! Estamos encantados de que hayas decidido visitarnos.  <br>
+      Nosotros ofrecemos una amplia variedad de servicios, desde ventas online hasta asesoramiento<br> 
+      personalizado. Hemos trabajado duro para asegurarnos de que nuestra página web sea fácil de navegar <br>
+      y que puedas encontrar exactamente lo que necesitas rápidamente.En nuestra página web, encontrarás una <br>
+      gran selección de productos de alta calidad a precios competitivos. Además, nuestros servicios personalizados <br>
+      te ayudarán a obtener el mejor resultado posible. Nos enorgullece ofrecer una experiencia de compra en línea segura <br>
+      y confiable, y nuestro equipo de atención al cliente siempre está disponible para ayudarte en todo lo que necesites.
+    </p>
+  </div>
+  </b>
+  <a id="a_koko" href="https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Servicios.html">https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Servicios.html</a>
+   <a id="a_kol" href="https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Tienda.html">https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Tienda.html</a>
+  <a id="a_kol0" href="https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Jesu.html">https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Jesu.html</a>
+  <a id="a_kol0pp" href="https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Asistencia.html">https://xcfvtbx6hgcpzzamhehbgg.on.drv.tw/webservicioseficases/Asistencia.html</a>
+   <!-- Enlaces del Footer Ponerlos Aqui -->
+ 
+  
+  <img id="img_opf" src="Footer-1.png" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+
+  <!-- Enlace a la librería jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Enlace a la librería Popper.js -->
+  <script src="https://unpkg.com/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script>
+  <!-- Enlace a la última versión de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+
+
+
+  
+
+   
+
+    
+    <div id="div-over" class="welcome-banner contenedor">
+      <img src="Biembenido~1.jpg" alt="" class="imagen">
+    </div>
+         <div class="navbar">
+          
+     <div class="col-12 col-sm-6">
+   
+  
+      </a>
+      <a href="Servicios.html">
+        <div data-popup="Servicios.html" class="navbutton" data-value="4" data-hover-image="Servicios2.png" >
+          <img src="Servicios1.png" alt="Botón 2">
+        </div>
+  
+      </a>
+      <a href="Tienda.html">
+        <div data-popup="Tienda.html" class="navbutton" data-value="5" data-hover-image="Tienda 2.png" >
+          <img src="Tienda 1.png" alt="Botón 3">
+        </div>
+       </a>
+      
+        <div class="col-12 col-sm-6">
+      <a href="Jesu.html">
+        <div data-popup="jesu.html" class="navbutton" data-value="6" data-hover-image="Rotulo 2.png" >
+          <img src="Rotulo1.png" alt="Botón 4">
+        </div>
+        <a
+        href="Asistencia.html">
+        <div data-popup="Asistencia.html" class="navbutton" data-value="1" data-hover-image="Contáctenos2.png">
+          <img src="Contáctenos1.png" alt="Botón 1" id="div_Cont">
+        </div>
+      </a>
+    
+      <div id="popup-container">
+        <iframe id="popup-iframe" src=""></iframe>
+      </div>
+     
+      
+      
+    
+    <!-- Asegúrate de incluir la biblioteca de jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    
+    <script>
+      $(document).ready(() => {
+        let defaultImages = {};
+        $('.navbutton').each((index, button) => {
+          defaultImages[button.dataset.value] = button.querySelector('img').src;
+        });
+        
+        let selectedButton = null;
+        
+        $('.navbutton').on('mousedown', function() {
+          let value = $(this).data('value');
+          let hoverImage = $(this).data('hover-image');
+          $(this).find('img').attr('src', hoverImage);
+          selectedButton = $(this);
+        });
+        
+        $('.navbutton').on('mouseup', function() {
+          let value = $(this).data('value');
+          $(this).find('img').attr('src', defaultImages[value]);
+          if (selectedButton && selectedButton[0] === this) {
+            // El mismo botón ha sido clicado dos veces, así que lo deseleccionamos
+            $(this).removeClass('selected');
+            selectedButton = null;
+          } else {
+            // Seleccionamos el botón
+            $(this).addClass('selected');
+            if (selectedButton && selectedButton.length > 0) {
+              // Deseleccionamos el botón anteriormente seleccionado
+              selectedButton.removeClass('selected');
+            }
+            selectedButton = $(this);
+          }
+        });
+
+        $('.navbutton').on('mouseout', function() {
+          if (!$(this).hasClass('selected')) {
+            let value = $(this).data('value');
+            $(this).find('img').attr('src', defaultImages[value]);
+          }
+        });
+      });
+      // Ventana Emergente
+      // Obtener todos los botones de navegación
+      const navButtons = document.querySelectorAll('.navbutton');
+      
+      // Obtener el contenedor de la ventana emergente
+      const popupContainer = document.getElementById('popup-container');
+      
+      // Agregar un controlador de eventos mouseenter a cada botón de navegación
+      navButtons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+          // Obtener la URL del botón
+          const url = button.getAttribute('data-popup');
+          
+          // Mostrar la ventana emergente
+          popupContainer.style.display = 'block';
+          
+          // Cargar la URL en un iframe dentro de la ventana emergente
+          const popupIframe = document.getElementById('popup-iframe');
+          popupIframe.src = url;
+        });
+      });
+      
+      // Agregar un controlador de eventos mouseleave al contenedor de la ventana emergente para ocultarla al salir del botón
+      popupContainer.addEventListener('mouseleave', () => {
+        popupContainer.style.display = 'none';
+      });
+    </script>
+   
+
+
+
+   
+  
+
+  </body>
+</html>

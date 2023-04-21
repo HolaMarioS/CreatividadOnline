@@ -1,0 +1,15 @@
+  <!-- Contenido de tu página web -->
+  <div class="container">
+    <h1>Bienvenido a mi página web</h1>
+    <p>Este es un ejemplo de cómo utilizar Bootstrap para crear una página web responsive.</p>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <p>Descripción de la imagen 1</p>
+      </div>
+      <div class="col-12 col-sm-6">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <p>Descripción de la imagen 2</p>
+      </div>
+    </div>
+  </div>

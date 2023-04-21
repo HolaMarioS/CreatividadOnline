@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+        <title>Tienda en línea</title>
+        <link rel="stylesheet" href="tienda.css">
+        <script src="tienda.js"></script>
+       
+</head>
+<style>
+		#imagen_op {
+  /* Imagen que rota */
+  width: 25%;
+  height: 30%;
+  border: none;
+  position: fixed; /* Establece la posición fija de la imagen */
+  top: 17%; /* Ajusta la posición verticalmente */
+  left: 12%; /* Ajusta la posición horizontalmente */
+  transform: translate(-50%, -50%) rotateY(0deg); /* Ajusta la posición central y la rotación de la imagen */
+  z-index: 2; /* Establece la posición en primer plano */
+}
+
+.imagen:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 10px 10px #1e44ec;
+  -webkit-box-shadow: 0px 0px 10px 10px #455ef0;
+}
+
+
+</style>
+<body>
+    <a href="servicioseficases.html">
+		<img id="imagen_op" src="Lactod.png" alt="Descripción de la imagen" class="imagen" title="Lactod.png">
+	  </a>
+
+        <h1>  Bienvenido a nuestra tienda en línea</h1>
+      
+        <br>  <br>  <br>  <br>  <br>  <br> <br>  <br>  <br><br>  <br>
+      
+        <div  class="menu-container">
+          <div class="menu-item">
+            <h2><a href="#libros">Libros</a></h2>
+          </div>
+          <div class="menu-item">
+            <h2><a href="#documentos">Documentos</a></h2>
+          </div>
+          <div class="menu-item">
+            <h2><a href="#fotografias">Fotografías</a></h2>
+          </div>
+        </div>
+        
+        <section id="libros">
+          <h2>Libros</h2>
+          <ul style="position: absolute; left: 26%;">
+            <div>
+              <img src="Foto El Mirador.jpg" alt="">
+            </div>
+            <li>
+              <div style="position: absolute; left: 0%;">
+              <h3 style="background-color: rgba(240, 255, 255, 0.5);">El Mirador de ABismos</h3>
+             <b> <p style="background-color: rgba(240, 255, 255, 0.493);">Título: El Mirador de Abismos
+
+                Autor: [Mario López Valdés] <br/>
+                
+                Género: Autoayuda, Espiritualidad, Economía, Relaciones <br/>
+                <br/>
+                
+                Sinopsis:
+
+                <br/>
+                "El Mirador de Abismos" es un libro inspirador y transformador que aborda diversos
+                 temas de la vida, desde la economía y las relaciones matrimoniales hasta el amor y
+                 la búsqueda de paz interior. Con un enfoque en la sabiduría y enseñanzas de Jesucristo,
+                 este libro se presenta como una guía para aquellos que desean encontrar claridad en
+                 medio del caos y la incertidumbre. La obra- se basa en los principios de la palabra de Dios,
+                 proporcionando consejos prácticos y espirituales para abordar los desafíos diarios y ayudar 
+                 a los lectores a alcanzar sus objetivos personales y profesionales. 
+                 A través de reflexiones, anécdotas y ejemplos de vida, el autor nos lleva 
+                 a explorar nuestra relación con nosotros mismos, con los demás y con Dios, 
+                 invitándonos a mirar hacia el abismo de nuestras experiencias y encontrar la 
+                 luz que nos guíe hacia un futuro lleno de amor, prosperidad y felicidad.
+                 En "El Mirador de Abismos", los lectores encontrarán herramientas para superar las adversidades,
+                 fortalecer sus matrimonios, mejorar sus finanzas y, sobre todo, profundizar en su fe y 
+                 su relación con Jesucristo como nuestro señor y salvador. Este libro es una invitación a 
+                 la introspección y la transformación personal, convirtiéndose en un recurso indispensable 
+                 para aquellos que buscan una vida más plena y llena de propósito.
+                 No pierdas la oportunidad de embarcarte en este viaje hacia la autorrealización y la paz espiritual.
+                 "El Mirador de Abismos" 
+                 es el libro que te ayudará a descubrir y enfrentar tus miedos, aprender del  
+                 pasado y construir un futuro brillante en comunión con Dios.</p>
+                
+              <p style="background-color: rgba(240, 255, 255, 0.5);">Precio: $10.00</p></b>
+              <button onclick="comprar('libro1')">Comprar</button>
+            </div>
+           
+            </li>
+            <!-- Agrega aquí los otros libros -->
+          </ul>
+        </section>
+         <!-- Agrega aquí los otros libros 
+        <section id="documentos">
+          <h2>Documentos</h2>
+          <ul>
+            <li>
+              <h3>Documento 1</h3>
+              <p>Descripción del documento 1.</p>
+              <p>Precio: $10.00</p>
+              <button onclick="comprar('documento1')">Comprar</button>
+            </li>
+            
+          </ul>
+        </section>
+        
+        <section id="fotografias">
+          <h2>Fotografías</h2>
+          <ul>
+            <li>
+              <h3>Fotografía 1</h3>
+              <p>Descripción de la fotografía 1.</p>
+              <p>Precio: $10.00</p>
+              <button onclick="comprar('fotografia1')">Comprar</button>
+            </li>
+                          
+          </ul>   
+        </section>
+        
+        <script>
+          function comprar(producto) {
+            var url = "https://tppay.me/lfsqxe90"; // URL de Tropy Pay
+            var precio = 0;
+            switch (producto) {
+              case 'libro1':
+                precio = 10.00;
+                break;
+              case 'documento1':
+                precio = 5.00;
+                break;
+              case 'fotografia1':
+                precio = 2.00;
+                break;
+              // Agrega aquí los otros productos
+            }
+            url += "?amount=" + precio + "&description=" + producto;
+            window.open(url, "www.tropipay.com");
+          }
+
+          
+        </script>
+   -->
+</body>
+</html>
